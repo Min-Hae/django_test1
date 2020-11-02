@@ -20,6 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
     path('hello', views.helloFunc), # hello라는 요청이 왔을 때 helloFunc가 실행된다.
-    path('hello_temp', views.hello_temp_Func),
+    # 127.0.0.1/hello_temp를 주소창에 입력하면 views.py안의 hello_temp_Func함수가 실행됨.
+    path('hello_temp', views.hello_temp_Func), 
     path('world', views.worldFunc),
 ]

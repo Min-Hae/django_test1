@@ -4,11 +4,32 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
+<!--  
+<script>
+window.onload = function(){
+	alert('자바 스크립트 수행');
+}
+-->
+<link rel="stylesheet" type="text/css" href="/static/css/test.css">
+<script src="/static/js/test.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	
+$("#myImg").click(function(){
+	abc();
+});
+});
+</script>
 <body>
-world 세상
-<br>
-<img src='https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png' />
-<br>
-<img src ='/static/images/logo.png' />
+	world 세상
+	<br>
+	<img
+		src='https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png' />
+	<br>
+	<img src='/static/images/logo.png' id='myImg' />
+
 </body>
 </html>
